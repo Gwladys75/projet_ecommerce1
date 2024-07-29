@@ -1,0 +1,319 @@
+/* ===== { palette de couleurs } ===== */
+:root {
+    --bleu: #A8D1E7;
+    --Blanc-rose: #FCFAE2;
+    --rose: #FFBFC5;
+    --violet-rose: #EB8DB5;
+    --violet: #D4A3C4;
+    --Blanc-alpha-40: rgba(255, 255, 255, 0.40);
+    --Blanc-alpha-25: rgba(255, 255, 255, 0.25);
+    --fond-flou: blur(5px);
+    --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.40);
+    /* variaton a retenir
+    :root{
+        --space: 2rem;
+        
+    
+    
+    */
+}
+
+/* ===== { la base } ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../img/nuit\ violette\ .jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn {
+    background-color: #fbeee0;
+    border: 2px solid #D4A3C4;
+    border-radius: 30px;
+    box-shadow: #D4A3C4 4px 4px 0 0;
+    color: #D4A3C4;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-74:hover {
+    background-color:  var(--bleu);
+}
+
+.button-74:active {
+    box-shadow: #D4A3C4 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button-74 {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
+
+
+
+/* ====== {  header stylisation de la barre de navigation } =====*/
+
+/* ===== { Fond de la nav } =====*/
+.nav {
+    position: absolute;
+    background: linear-gradient(to right, #FFBFC5, #FCFAE2, #A8D1E7);
+    width: 100%;
+    border-radius: 70px;
+    padding: 10px 0;
+    box-shadow: 0px 10px 10px rgba(68, 3, 74, 0.245);
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+/* ===== { element de  la nav } =====*/
+.nav-item {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.image_logo1 {
+    padding-left: 30px;
+}
+
+.image_logo1 img {
+    border-radius: 50%;
+    display: flex;
+    height: 80px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_logo {
+    padding-right: 20px;
+}
+
+.image_logo img {
+    display: flex;
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_logo1,
+.image_logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--violet-rose);
+    text-transform: uppercase;
+}
+
+.span {
+    color: var(--violet-rose);
+}
+
+.nav-link:hover {
+    color: var(--violet-rose);
+}
+
+.nav .button {
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.219);
+    transition: all 0.3s ease-out;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    /* transition: .35s; */
+    background-color: white;
+}
+
+
+.button img {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+
+}
+
+.nav .button span {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav .button:hover {
+    width: 200px;
+}
+
+.nav .button:hover span {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--Blanc-rose);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-left: 10px;
+    line-height: 60px;
+}
+
+.nav-link:active,
+.nav-link:focus {
+    transform: scale(0.9, 0.9);
+}
+
+#logo .navbar img {
+    border-radius: 50px;
+}
+
+.image_logo img {
+    width: 150px;
+}
+
+/* ===== {Main} ===== */
+
+
+/* ===== { banderol acceuil  partie 1 } ===== */
+
+
+#banderole img {
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+    height: auto;
+}
+
+/* ---- card ----- */
+.card{
+    border-radius: 50px;
+    
+}
+.card img{
+    border-radius: 50px;
+}
+
+
+/*===== { FOOTER } ===== */
+
+.foot1 {
+    height: 50vh;
+    background: linear-gradient(to right, #FFBFC5, #FCFAE2, #A8D1E7);
+    margin-bottom: 5px;
+    border-radius: 30px;
+
+}
+
+.icon1 {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.text-center {
+    color: var(--violet);
+}
+
+.foot2 {
+    height: 50vh;
+    background: linear-gradient(to right, #FFBFC5, #FCFAE2, #A8D1E7);
+    border-radius: 30px;
+} 
+
+/* PAGE ARTICLES / PRODUITS */
+/* ASIDE */
+
+.produits {
+    margin: 100px;
+    text-align: center;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+
+section .aside {
+    display: flex;
+	flex-direction: column;
+	/* justify-content: space-around; */
+	/* flex-wrap: wrap; */
+    
+    
+}
+
+.aside-filter {
+    align-self: flex-end;
+    padding: 30px;
+    background: linear-gradient(to right, #FFBFC5, #FCFAE2, #A8D1E7);
+    border: 1px solid #ddd;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    height: 50vh;
+}
+
+
+.filter-options {
+
+    margin-bottom: 20px;
+}
+
+.filter-options label {
+    margin-right: 10px;
+}
+
+
+.btn-details,
+.btn-ajout {
+    font-size: 14px;
+
+}
+
+
+/* PAGE AJOUTER PRODUIT */
+
+.ajout {
+    margin: 100px;
+    text-align: center;
+
+}
+
+.formu {
+    border-radius: 20px;
+}
